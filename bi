@@ -57,3 +57,10 @@ rm temp_bootstrap
 
 cd ../../
 bin/behat -dl
+
+# selenium
+curl -o /tmp/selenium-server.jar http://selenium.googlecode.com/files/selenium-server-standalone-2.31.0.jar
+
+# Tell the user how to run selenum.
+echo "Behat and mink are ready to go. To run selenium, execute the following command: java -jar /tmp/selenium-server-*.jar\n
+Be aware that this will take your terminal and lock it so Selenium to run correctly. Consider running this as a job: java -jar selenium-server-*.jar &"
