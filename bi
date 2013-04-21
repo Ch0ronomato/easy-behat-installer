@@ -5,7 +5,6 @@ echo "Please enter the site url: "
 read site
 
 # fill the json file
-touch composer.json
 echo '{
     "require": {
         "behat/behat": "2.4.*@stable",
@@ -44,7 +43,6 @@ cd features/bootstrap
 line_nums=$(wc -l < FeatureContext.php)
 echo $line_nums;
 
-touch temp_bootstrap
 head -n 1 FeatureContext.php >> temp_bootstrap;
 echo "use Behat\MinkExtension\Context\MinkContext;" >> temp_bootstrap;
 
